@@ -2,28 +2,21 @@
   "name": "local-lens-neighboreye",
   "private": true,
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "server": "node server/index.js",
-    "client": "vite",
-    "dev:full": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "cors": "^2.8.5",
-    "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
-    "multer": "^2.0.2",
+    "next": "^15.2.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "sql.js": "^1.13.0"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.4.1",
-    "concurrently": "^9.1.2",
-    "vite": "^5.4.19"
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^15.2.0"
   }
 }
